@@ -3,10 +3,11 @@ section{
     background-color: aliceblue;
     border: 4px solid black;
 }
+
 .separator{height: 10vh}
 
 .hero{
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 p{

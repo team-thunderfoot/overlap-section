@@ -18,9 +18,11 @@ class OverlapSection {
             ScrollTrigger.create({
                 trigger: panel,
                 start: `top ${this.scrollStart}`,
-                pin: i === panels.length ? false : true,
-                //end:"bottom 100",
+                // end: "bottom center",
+                pin: i === panels.length -1 ? false : true,                 
                 pinSpacing: false,
+                // pinType: "transform",
+                // snap: false,
             });
         });
     }

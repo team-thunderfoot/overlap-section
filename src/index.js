@@ -6,7 +6,7 @@ class Page {
     }
     init() {
         new OverlapSection({
-            elements: document.querySelectorAll("section"),
+            elements: document.querySelectorAll(".js--overlap"),
         });
     }
 }
