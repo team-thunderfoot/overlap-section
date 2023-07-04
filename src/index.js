@@ -7,7 +7,7 @@ class Page {
     init() {
         new OverlapSection({
             elements: document.querySelectorAll(".js--overlap"),
-            overlayEnd: "40%"
+            overlap: "50%"
         });
     }
 }
