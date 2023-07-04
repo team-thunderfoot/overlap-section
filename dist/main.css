@@ -7,11 +7,15 @@ section{
 .separator{height: 10vh}
 
 .hero{
-    /* height: 100vh; */
+    background-color: red;
 }
 
 p{
     font-size: 2rem;
+}
+
+.js--overlap{
+    position: relative;
 }
 
 .title{

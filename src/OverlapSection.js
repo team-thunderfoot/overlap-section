@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 class OverlapSection {
     constructor(payload) {
         this.elements = payload.elements;
-        this.scrollStart = payload.scrollStart ? payload.scrollStart : "top";
+        this.overlayEnd = payload.overlayEnd ? payload.overlayEnd : "bottom";
 
         this.init();
     }
@@ -13,16 +13,14 @@ class OverlapSection {
     init() {
         let panels = gsap.utils.toArray(this.elements);
 
-        console.log(panels)
+        console.log(panels);
         panels.forEach((panel, i) => {
             ScrollTrigger.create({
                 trigger: panel,
-                start: `top ${this.scrollStart}`,
-                // end: "bottom center",
-                pin: i === panels.length -1 ? false : true,                 
+                start: "top top",
+                end: `${this.overlayEnd} top`,
+                pin: i === panels.length - 1 ? false : true,
                 pinSpacing: false,
-                // pinType: "transform",
-                // snap: false,
             });
         });
     }
