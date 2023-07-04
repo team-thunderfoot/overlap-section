@@ -1,0 +1,35 @@
+{
+  "name": "@teamthunderfoot/overlap-section",
+  "version": "0.0.1",
+  "description": "Sections Overlapping package",
+  "main": "",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-thunderfoot/overlap-section.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-thunderfoot/overlap-section/issues"
+  },
+  "homepage": "https://github.com/team-thunderfoot/overlap-section#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@teamthunderfoot/breakpoints": "^0.0.6",
+    "gsap": "^3.12.1"
+  },
+  "keywords": [
+    "overlap",
+    "sections",
+    "pinned"
+  ]
+}
