@@ -6,8 +6,7 @@ class Page {
     }
     init() {
         new OverlapSection({
-            elements: document.querySelectorAll(".example-1"),
-            scrollStart: "center",
+            elements: document.querySelectorAll("section"),
         });
     }
 }
