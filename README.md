@@ -33,7 +33,7 @@ new Index();
 
 ## HTML example
 
-**At least two elements need to exist**, selected by the `elements` class property. In this case, we have selected them using their class name (".js--overlap").
+**At least two sibling elements need to exist**, selected by the `elements` class property. In this case, we have selected them using their class name (".js--overlap").
 
 ```html
 <section class="js--overlap">
