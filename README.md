@@ -1,6 +1,6 @@
 # overlap-section
 
-The `overlap-section` allows you to create Sections Overlappings on HTML elements by specifying configuration options such as the elements to animate, animation duration, number formatting, and scroll trigger settings.
+The `overlap-section` allows you to create elements overlapping on HTML elements while scrollling, by specifying configuration options: the elements to animate, and the ammount of the element that will be covered by the overlapped element.
 
 [Here's an example](https://team-thunderfoot.github.io/overlap-section/)
 
