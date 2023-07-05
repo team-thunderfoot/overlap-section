@@ -65,6 +65,27 @@
                         </li>
                     </ul>
                 </div>
+                <div class="wrapper">
+                    <h2>Methods</h2>
+                    <p>
+                        <strong>destroy():</strong> kills the animation instance, immediately unpinning and restoring any pin-related changes made to the DOM by OverlapSection and removing all
+                        scroll-related listeners, etc.
+                    </p>
+                    <code>
+                        const overlap = new OverlapSection( <br />
+                        &emsp;{ <br />
+                        &emsp;&emsp;elements: document.querySelectorAll(".js--overlap"),<br />
+                        &emsp;&emsp;overlap: 50%<br />
+                        &emsp;} <br />
+                        );
+                        <br />
+                        <br />
+                        <br />
+                        setTimeout(() => { <br />
+                        &emsp;&emsp;<strong>overlap.destroy()</strong><br />
+                        }, 2000);<br />
+                    </code>
+                </div>
             </section>
         </main>
         <script src="./main.js"></script>

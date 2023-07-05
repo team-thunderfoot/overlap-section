@@ -23,6 +23,7 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
+    "@andresclua/jsutil": "^2.0.6",
     "@babel/core": "^7.14.3",
     "@teamthunderfoot/breakpoints": "^0.0.6",
     "gsap": "^3.12.1"

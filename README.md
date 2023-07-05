@@ -49,3 +49,7 @@ new Index();
 • `elements (required):` represents **the elements that will be overlapped. At least two sibling elements need to exist**.
 
 • `overlap (optional):` the ammount of the element that will be covered by the overlapped element. **100% by default**. Allowed values: "top" / "center" / "bottom" / "X%"" / "Xpx"
+
+## Methods
+
+• `destroy():` kills the animation instance, immediately unpinning and restoring any pin-related changes made to the DOM by OverlapSection and removing all scroll-related listeners, etc. 

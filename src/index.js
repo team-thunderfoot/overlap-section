@@ -5,7 +5,7 @@ class Page {
         this.init();
     }
     init() {
-        new OverlapSection({
+        const overlap = new OverlapSection({
             elements: document.querySelectorAll(".js--overlap"),
             overlap: "100%"
         });
