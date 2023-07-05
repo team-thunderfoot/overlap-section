@@ -46,6 +46,6 @@ new Index();
 
 ## JS Options
 
-• `elements (required):` represents **the elements that will be overlapped. At least two elements need to exist**.
+• `elements (required):` represents **the elements that will be overlapped. At least two sibling elements need to exist**.
 
 • `overlap (optional):` the ammount of the element that will be covered by the overlapped element. **100% by default**. Allowed values: "top" / "center" / "bottom" / "X%"" / "Xpx"
