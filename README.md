@@ -21,8 +21,8 @@ class Index {
     }
     init() {
         new OverlapSection({
-            elements: document.querySelectorAll(".example-1"), //required -> the elements that will be translated
-            scrollStart: "center", //scroll trigger start position -> "top" / "center" / "bottom" / "X%"" / "Xpx"
+            elements: document.querySelectorAll(".js--overlap"), // required -> the elements that will be overlapped
+            overlap: "50%", // the ammount of the element that will be covered by the overlapped element. 100% by default. Allowed values: "top" / "center" / "bottom" / "X%"" / "Xpx"
         });
     }
 }
@@ -31,17 +31,21 @@ export default Index;
 new Index();
 ```
 
-## HTML attributes
+## HTML example
 
-• `data-counter-duration (optional):` If the element has a data-counter-duration attribute, it overrides the default animation duration with the value specified in the attribute. **The duration hierarchy is: default value (2 seconds) < duration config value (determined in JS class parameters) < data-counter-duration (determined as a HTML attribute)**
+**At least two elements need to exist**, selected by the `elements` class property. In this case, we have selected them using their class name (".js--overlap").
 
 ```html
-<section class="example-1" data-counter-duration="5">20.000</section>
-
+<section class="js--overlap">
+    <div>this is the section that will be overlapped by the next one</div>
+</section>
+<section class="js--overlap">
+    <div>this is the section that will overlap the previous one</div>
+</section>
 ```
 
 ## JS Options
 
-• `elements (required):` represents **the elements that will be animated**. It is expected to be an array of DOM elements, but it can be just one element. **It's the only required option**.
+• `elements (required):` represents **the elements that will be overlapped. At least two elements need to exist**.
 
-• `scrollStart (optional):` the scroll trigger start position. **The default value is "80%"**. Allowed values: "top" / "center" / "bottom" / "X%"" / "Xpx".
+• `overlap (optional):` the ammount of the element that will be covered by the overlapped element. **100% by default**. Allowed values: "top" / "center" / "bottom" / "X%"" / "Xpx"

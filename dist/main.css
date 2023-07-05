@@ -1,4 +1,5 @@
 section{
+    position: relative;
     padding: 200px;
     border-radius: 4rem 4rem 0 0;
     background-color: rgb(232, 215, 250);
