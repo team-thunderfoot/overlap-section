@@ -11,64 +11,62 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./dist/main.css" />
-        <title>Sections Overlapping - By Thunderfoot</title>
+        <title>Overlap Sections - By Thunderfoot</title>
     </head>
     <body>
-        <h1 class="title">Sections Overlapping - By Thunderfoot</h1>
-        <section>
-            <h2>Example 1:</h2>
-            <h3>No HTML attributes</h3>
-            <h3>JS Class Configuration options:</h3>
-            <ul>
-                <li>elements: document.querySelectorAll(".example-1")</li>
-                <li>regionFormat: "en-US"</li>
-                <li>duration: 1</li>
-                <li>scrollStart: "center"</li>
-            </ul>
-            <code>
-                new OverlapSection( <br />
-                &emsp;{ <br />
-                &emsp;&emsp;elements: document.querySelectorAll(".example-1"),<br />
-                &emsp;&emsp;regionFormat: "en-US",<br />
-                &emsp;&emsp;duration: 1,<br />
-                &emsp;&emsp;scrollStart: "center",<br />
-                &emsp;} <br />
-                );
-            </code>
-            <div class="count-wrapper">
-                <p class="example-1">20,000</p>
-                <p class="example-1">20,000,000</p>
-            </div>
-        </section>
-        <div class="separator"></div>
-        <section>
-            <h2>Example 2:</h2>
-            <h3>HTML attributes</h3>
-            <ul>
-                <li>first number (20.000) &rarr; data-counter-duration="5"</li>
-                <li>second number (20.000.000) &rarr; data-counter-duration="3"</li>
-            </ul>
-            <h3>JS Class Configuration options:</h3>
-            <ul>
-                <li>elements: document.querySelectorAll(".example-2")</li>
-                <li>regionFormat: "es-ES"</li>
-                <li>separator: "."</li>
-            </ul>
-            <code>
-                new OverlapSection( <br />
-                &emsp;{ <br />
-                &emsp;&emsp;elements: document.querySelectorAll(".example-2"),<br />
-                &emsp;&emsp;regionFormat: "es-ES",<br />
-                &emsp;&emsp;separator: ".",<br />
-                &emsp;} <br />
-                );
-            </code>
-            <div class="count-wrapper">
-                <p class="example-2" data-counter-duration="5">20.000</p>
-                <p class="example-2" data-counter-duration="3">20.000.000</p>
+        <main>
+            <section class="hero js--overlap">
+                <div>
+                    <h1 class="title">Overlap Sections - By Thunderfoot</h1>
+                    <p>
+                        This package allows you to create elements overlapping on HTML elements while scrollling, by specifying configuration options: the elements to animate, and the ammount of the
+                        element that will be covered by the overlapped element.
+                    </p>
+                    <p class="scroll-down mt-5">Scroll down</p>
                 </div>
-        </section>
-        <div class="separator"></div>
+            </section>
+            <section class="js--overlap">
+                <div class="wrapper">
+                    <h2>HTML example</h2>
+                    <p>At least two elements need to exist, selected by the `elements` class property. In this case, we have selected them using their class name (".js--overlap").</p>
+                    <code>
+                        < section class="js--overlap"><br />
+                        &emsp;&emsp;< div>this is the section that will be overlapped by the next one< /div> <br />
+                        < /section><br />
+                        < section class="js--overlap"><br />
+                        &emsp;&emsp;< div>this is the section that will overlap the previous one< /div> <br />
+                        < /section><br />
+                    </code>
+                </div>
+                <div class="wrapper">
+                    <h2>Installation</h2>
+                    <code>npm install @teamthunderfoot/overlap-section</code>
+                </div>
+                <div class="wrapper">
+                    <h2>Usage</h2>
+                    <code>import OverlapSection from "@teamthunderfoot/overlap-section";</code>
+                    <code>
+                        new OverlapSection( <br />
+                        &emsp;{ <br />
+                        &emsp;&emsp;elements: document.querySelectorAll(".js--overlap"),<br />
+                        &emsp;&emsp;overlap: 50%<br />
+                        &emsp;} <br />
+                        );
+                    </code>
+                </div>
+
+                <div class="wrapper">
+                    <h2>JS Options</h2>
+                    <ul>
+                        <li><strong>elements (required):</strong> represents the elements that will be overlapped. At least two elements need to exist.</li>
+                        <li>
+                            <strong>overlap (optional):</strong> the ammount of the element that will be covered by the overlapped element. 100% by default. Allowed values: "top" / "center" / "bottom"
+                            / "X%"" / "Xpx"
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
         <script src="./dist/main.js"></script>
     </body>
 </html>

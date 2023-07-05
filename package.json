@@ -1,7 +1,7 @@
 {
   "name": "@teamthunderfoot/overlap-section",
   "version": "0.0.1",
-  "description": "Sections Overlapping package",
+  "description": "Overlap Sections package",
   "main": "",
   "scripts": {
     "start": "webpack --watch",

@@ -1,41 +1,69 @@
-section{
+section {
     position: relative;
-    padding: 200px;
+    padding: 5rem 10%;
     border-radius: 4rem 4rem 0 0;
     background-color: rgb(232, 215, 250);
 }
 
-.separator{height: 10vh}
+.separator {
+    height: 10vh;
+}
 
-.hero{
+.hero {
+    height: 80vh;
     background-color: aquamarine;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     border-radius: 0;
-    
 }
 
-main{
+.hero p {
+    font-size: 1.25rem;
+}
+
+main {
     background-color: aquamarine;
-
 }
 
-p{
+p {
     font-size: 2rem;
 }
 
-.title{
+.title {
     text-align: center;
-    margin: 3rem 5rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 600;
 }
 
-h2{
+h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
-    font-weight: 600;  
+    font-weight: 600;
+    text-align: center;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
+}
+
+.wrapper{
+   padding-bottom: 3rem; 
+}
+
+.wrapper p{
+    font-size: 1rem;
+}
+
+
+code{
+    display: block;
+    width: 100%;
+    background-color: azure;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
