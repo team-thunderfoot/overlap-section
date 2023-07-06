@@ -61,9 +61,21 @@ h3 {
 
 code{
     display: block;
+    text-align: left;
     width: 100%;
     background-color: azure;
     border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+.panel{
+    height: 80vh;
+}
+
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
 }

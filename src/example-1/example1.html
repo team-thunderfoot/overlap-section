@@ -10,20 +10,29 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="../../dist/main.css" />
         <title>Overlap Sections - By Thunderfoot</title>
     </head>
     <body>
-        <main>
+        <main class="example-1">
             <section class="hero js--overlap">
                 <div>
-                    <h1 class="title">Overlap Sections - By Thunderfoot</h1>
-                    <p>
-                        This package allows you to create elements overlapping on HTML elements while scrollling, by specifying configuration options: the elements to animate, and the ammount of the
-                        element that will be covered by the overlapped element.
-                    </p>
+                    <h1 class="title">Example - multiple overlapping</h1>
+                    <p>the overlap is set to 80%</p>
+                    <code>
+                        new OverlapSection( <br />
+                        &emsp;{ <br />
+                        &emsp;&emsp;elements: document.querySelectorAll(".js--overlap"),<br />
+                        &emsp;&emsp;overlap: 80%<br />
+                        &emsp;} <br />
+                        );
+                    </code>
                     <p class="scroll-down mt-5">Scroll down</p>
                 </div>
+            </section>
+            <section class="panel orange js--overlap">
+            </section>
+            <section class="panel blue js--overlap">
             </section>
             <section class="js--overlap">
                 <div class="wrapper">
@@ -90,12 +99,12 @@
                     <h2>Examples</h2>
                     <ul>
                         <li>
-                            <a href="../src/example-1/example1.html">Multiple layers</a>
+                            <a href="../src/pages/example1.html">Multiple layers</a>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
-        <script src="./main.js"></script>
+        <script  src="./ExampleOne.js"></script>
     </body>
 </html>
