@@ -5,12 +5,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 class OverlapSection {
     constructor(payload) {
-        this.elements = payload.elements;
+        this.DOM = {
+            elements: [...payload.elements],
+        };
+
         this.overlap = payload.overlap ? payload.overlap : "100%";
 
         this.jsUtil = new JSUTIL();
 
-        this.panels = gsap.utils.toArray(this.elements);
+        this.panels = gsap.utils.toArray(this.DOM.elements);
 
         this.scrollTriggers = [];
 
